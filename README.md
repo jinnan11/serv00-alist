@@ -16,6 +16,6 @@ Serv00 进程保活最终解决方案：https://saika.us.kg/2024/08/15/serv00-ke
 
 cd ~/domains/*.*/public_nodejs
 
-bash <(curl -s https://raw.githubusercontent.com/jinnan11/alist-freebsd/main/install_alist.sh)
+bash <(curl -s https://raw.githubusercontent.com/jinnan11/serv00-api/main/install_alist.sh)
 
 ~~~
