@@ -20,11 +20,11 @@ if [ "$(basename $(pwd))" == "public_nodejs" ]; then
     # 显示安装完成信息
     echo "已成功安装 Alist！请按照以下步骤进行配置："
 
-    # 提示修改配置文件
-    echo "1. 请修改 data/config.json 的配置文件，以确保所有设置符合您的需求。"
-
     # 提示修改 app.js 文件中的端口号
-    echo "2. 请修改 app.js 文件中的第 13 行和第 50 行，将 PORT 替换为您实际开放的端口号。"
+    echo "1. 请修改 app.js 文件中的第 13 行和第 50 行，将 PORT 替换为您实际开放的端口号。"
+    
+    # 提示修改配置文件
+    echo "2. 请修改 data/config.json 的配置文件，以确保所有设置符合您的需求。"
 
     # 提供作者信息和交流QQ群
     echo
