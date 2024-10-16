@@ -55,6 +55,9 @@ if [ "$(basename $(pwd))" == "public_nodejs" ]; then
         # 使您能够运行自己的软件
         devil binexec on
 
+        # 删除 web.js 文件，如果不存在则跳过
+        [ -f web.js ] && rm web.js
+
         # 清屏
         clear
 
