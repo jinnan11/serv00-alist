@@ -8,7 +8,7 @@ if [ "$(basename $(pwd))" == "public_nodejs" ]; then
     # 删除 public/index.html 文件，如果不存在则跳过
     [ -f public/index.html ] && rm public/index.html
     
-    # 判断是否有这四个文件
+    # 判断是否有所需文件
     files=("app.js" "start.sh" "package.json" "web.js")
     urls=(
         "https://raw.githubusercontent.com/jinnan11/serv00-api/main/alist/app.js"
@@ -52,7 +52,7 @@ if [ "$(basename $(pwd))" == "public_nodejs" ]; then
         echo
         
     else
-        # Enables the ability to run your own software
+        # 使您能够运行自己的软件
         devil binexec on
 
         # 清屏
@@ -60,8 +60,6 @@ if [ "$(basename $(pwd))" == "public_nodejs" ]; then
 
         # 如果不存在，提示信息
         echo "检测到不存在 data 文件夹，请断开重连SSH，再次输入这条指令。"
-
-
     fi
 
 else
