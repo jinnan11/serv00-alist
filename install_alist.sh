@@ -14,7 +14,7 @@ if [ "$(basename $(pwd))" == "public_nodejs" ]; then
         "https://raw.githubusercontent.com/jinnan11/serv00-api/main/alist/app.js"
         "https://raw.githubusercontent.com/jinnan11/serv00-api/main/alist/start.sh"
         "https://raw.githubusercontent.com/jinnan11/serv00-api/main/alist/package.json"
-        "https://github.com/jinnan11/alist-freebsd/releases/latest/download/alist"
+        "https://github.com/AlistGo/alist/releases/latest/download/alist-freebsd-amd64.tar.gz"
     )
 
     for i in "${!files[@]}"; do
@@ -24,8 +24,11 @@ if [ "$(basename $(pwd))" == "public_nodejs" ]; then
     done
 
     # 判断是否存在 alist 文件
-    if [ -f "alist" ]; then
+    if [ -f "alist-freebsd-amd64.tar.gz" ]; then
         # 如果存在，执行以下操作
+        tar -xzf alist-freebsd-amd64.tar.gz
+        rm alist-freebsd-amd64.tar.gz
+        rm -rf temp
         mv alist web.js
         chmod +x web.js
         ./web.js server
