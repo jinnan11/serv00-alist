@@ -7,6 +7,9 @@ clear
 if [ "$(basename $(pwd))" == "public_nodejs" ]; then
     # 删除 public/index.html 文件，如果不存在则跳过
     [ -f public/index.html ] && rm public/index.html
+
+    # 删除 start.sh 文件，如果不存在则跳过
+    [ -f start.sh ] && rm start.sh
     
     # 判断是否有所需文件
     files=("app.js" "start.sh" "package.json" "web.js")
@@ -57,6 +60,9 @@ if [ "$(basename $(pwd))" == "public_nodejs" ]; then
 
         # 删除 web.js 文件，如果不存在则跳过
         [ -f web.js ] && rm web.js
+
+        # 删除 start.sh 文件，如果不存在则跳过
+        [ -f start.sh ] && rm start.sh
 
         # 清屏
         clear
