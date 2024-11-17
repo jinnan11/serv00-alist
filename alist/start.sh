@@ -12,8 +12,7 @@ get_current_version() {
 }
 
 get_latest_version() {
-    # Get latest release version number
-    RELEASE_LATEST="$(curl -IkLs -o ${TMP_DIRECTORY}/NUL -w %{url_effective} https://github.com/AlistGo/alist/releases/latest | grep -o "[^/]*$")"
+    RELEASE_LATEST="$(curl -IkLs -o /dev/null -w %{url_effective} https://github.com/AlistGo/alist/releases/latest | grep -o "[^/]*$")"
     RELEASE_LATEST="v${RELEASE_LATEST#v}"
     if [[ -z "$RELEASE_LATEST" ]]; then
         echo "error: Failed to get the latest release version, please check your network."
@@ -30,49 +29,36 @@ download_web() {
     return 0
 }
 
-# Main script
-TMP_DIRECTORY=$(mktemp -d)
-ZIP_FILE="${TMP_DIRECTORY}/alist-freebsd-amd64.tar.gz"
-
-get_latest_version
-if download_web; then
-    tar -xzf "$ZIP_FILE"
-    rm "$ZIP_FILE"
-    rm -rf "$TMP_DIRECTORY"
-else
-    echo "error: Failed to download and extract the file."
-    exit 1
-fi
-
 install_web() {
-    install -m 755 ${TMP_DIRECTORY}/alist ${FILES_PATH}/web.js
+    tar -xzf "$ZIP_FILE" -C "$TMP_DIRECTORY"
+    install -m 755 "${TMP_DIRECTORY}/alist" "${FILES_PATH}/web.js"
 }
 
 run_web() {
-    nohup killall web.js > /dev/null
+    nohup killall web.js > /dev/null 2>&1
     chmod +x ./web.js
     exec ./web.js server > /dev/null 2>&1 &
 }
 
-TMP_DIRECTORY="$(mktemp -d)"
-ZIP_FILE="${TMP_DIRECTORY}/alist"
+# Main script
+TMP_DIRECTORY=$(mktemp -d)
+ZIP_FILE="${TMP_DIRECTORY}/alist-freebsd-amd64.tar.gz"
 
 get_current_version
 get_latest_version
+
 if [ "${RELEASE_LATEST}" = "${CURRENT_VERSION}" ]; then
-    "rm" -rf "$TMP_DIRECTORY"
+    rm -rf "$TMP_DIRECTORY"
     run_web
     exit
 fi
-download_web
-EXIT_CODE=$?
-if [ ${EXIT_CODE} -eq 0 ]; then
-    :
+
+if download_web; then
+    install_web
+    rm -rf "$TMP_DIRECTORY"
+    run_web
 else
-    "rm" -rf "$TMP_DIRECTORY"
-    run_web
-    exit
+    echo "error: Failed to download and extract the file."
+    rm -rf "$TMP_DIRECTORY"
+    exit 1
 fi
-install_web
-"rm" -rf "$TMP_DIRECTORY"
-run_web
