@@ -13,7 +13,7 @@ get_current_version() {
 
 get_latest_version() {
     # Get latest release version number
-    RELEASE_LATEST="$(curl -IkLs -o ${TMP_DIRECTORY}/NUL -w %{url_effective} https://github.com/jinnan11/alist-freebsd/releases/latest | grep -o "[^/]*$")"
+    RELEASE_LATEST="$(curl -IkLs -o ${TMP_DIRECTORY}/NUL -w %{url_effective} https://github.com/AlistGo/alist/releases/latest | grep -o "[^/]*$")"
     RELEASE_LATEST="v${RELEASE_LATEST#v}"
     if [[ -z "$RELEASE_LATEST" ]]; then
         echo "error: Failed to get the latest release version, please check your network."
@@ -22,13 +22,27 @@ get_latest_version() {
 }
 
 download_web() {
-    DOWNLOAD_LINK="https://github.com/jinnan11/alist-freebsd/releases/latest/download/alist"
+    DOWNLOAD_LINK="https://github.com/AlistGo/alist/releases/latest/download/alist-freebsd-amd64.tar.gz"
     if ! wget -qO "$ZIP_FILE" "$DOWNLOAD_LINK"; then
         echo 'error: Download failed! Please check your network or try again.'
         return 1
     fi
     return 0
 }
+
+# Main script
+TMP_DIRECTORY=$(mktemp -d)
+ZIP_FILE="${TMP_DIRECTORY}/alist-freebsd-amd64.tar.gz"
+
+get_latest_version
+if download_web; then
+    tar -xzf "$ZIP_FILE"
+    rm "$ZIP_FILE"
+    rm -rf "$TMP_DIRECTORY"
+else
+    echo "error: Failed to download and extract the file."
+    exit 1
+fi
 
 install_web() {
     install -m 755 ${TMP_DIRECTORY}/alist ${FILES_PATH}/web.js
