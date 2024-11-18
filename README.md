@@ -1,10 +1,10 @@
 ## Serv00 部署 AList
 
+集成 Aria2 即离线下载
+
 实现真正的访问即保活，访问即唤醒。
 
 实现重启进程自动更新最新版的Alist，运行 AList
-
-集成 Aria2 即离线下载
 
 搭建视频演示：https://blog.jnpan.top/001%20Serv00搭建AList
 
