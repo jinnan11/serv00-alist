@@ -4,7 +4,7 @@
 clear
 
 # 判断是否在 public_nodejs 目录下
-if [ "$(basename $(pwd))" == "public_nodejs" ]; then
+if [ "$(basename "$(pwd)")" == "public_nodejs" ]; then
     # 删除 public/index.html 文件，如果不存在则跳过
     [ -f public/index.html ] && rm public/index.html
 
@@ -43,16 +43,9 @@ if [ "$(basename $(pwd))" == "public_nodejs" ]; then
         clear
 
         # 如果存在，显示安装完成信息
-        echo "已成功安装 Alist！请按照以下步骤进行配置："
-
-        # 提示需要编辑的文件
-        echo "请结合教程在 File manager 中，编辑 app.js 和 data/config.json"
-        
-        # 提供作者信息和交流QQ群
-        echo
-        echo "作者： https://jnpan.top"
-        echo "QQ群： 244184124 欢迎加入交流"
-        echo
+        echo -e "已成功安装 Alist！\n"
+        echo -e "请在 File manager 中，编辑 app.js 和 data/config.json\n"
+        echo -e "作者： https://jnpan.top\nQQ群： 244184124 欢迎加入交流\n"
         
     else
         # 使您能够运行自己的软件
