@@ -8,31 +8,31 @@
 
 1. **注册账号**
    - 去 [Serv00 官网](https://www.serv00.com/) 注册账号，建议不要使用国内邮箱。
- ![image](https://github.com/user-attachments/assets/dc24b285-c7e9-44a2-9588-b656725c8c5e)
+      ![image](https://github.com/user-attachments/assets/dc24b285-c7e9-44a2-9588-b656725c8c5e)
    - 在邮箱中查收注册信息。
-![image](https://github.com/user-attachments/assets/030819cc-075a-4db8-bfd0-1748f5ef995f)
+      ![image](https://github.com/user-attachments/assets/030819cc-075a-4db8-bfd0-1748f5ef995f)
 
 2. **登入 DevilWEB webpanel**
    - 进入 Additional Service 选项卡，允许 Run your own applications。
-![image](https://github.com/user-attachments/assets/6472ea16-6ce5-469f-a67a-4879f637cffa)
+      ![image](https://github.com/user-attachments/assets/6472ea16-6ce5-469f-a67a-4879f637cffa)
    - 在 Port reservation 选项卡，添加两个随机 TCP 端口并记下。
-![image](https://github.com/user-attachments/assets/81358b39-ddc7-4936-9268-c5e974bda2cd)
+      ![image](https://github.com/user-attachments/assets/81358b39-ddc7-4936-9268-c5e974bda2cd)
    - （可选）添加数据库，记下数据库名称、用户名和密码。
-![image](https://github.com/user-attachments/assets/942a5588-3bef-4d53-b85e-cfd7fcf569e6)
+      ![image](https://github.com/user-attachments/assets/942a5588-3bef-4d53-b85e-cfd7fcf569e6)
 
 3. **新建 Node.js 网站**
    - 在 WWW Websites 选项卡，添加 Node.js 类型的网站。
-![image](https://github.com/user-attachments/assets/8fddad90-bba6-4253-803e-824f95151469)
+      ![image](https://github.com/user-attachments/assets/8fddad90-bba6-4253-803e-824f95151469)
    - （可选）自定义域名并生成 Let's Encrypt 证书。
-![image](https://github.com/user-attachments/assets/060e7fef-e303-45bd-bf15-3bab20796ffa)
-![image](https://github.com/user-attachments/assets/64db4859-67af-4501-9a62-ac1ee7fa0e15)
-![image](https://github.com/user-attachments/assets/2bebed09-8dd2-4c5d-939c-ad6eded6dead)
+      ![image](https://github.com/user-attachments/assets/060e7fef-e303-45bd-bf15-3bab20796ffa)
+      ![image](https://github.com/user-attachments/assets/64db4859-67af-4501-9a62-ac1ee7fa0e15)
+      ![image](https://github.com/user-attachments/assets/2bebed09-8dd2-4c5d-939c-ad6eded6dead)
 
 ### 部署 Alist
 
 1. **使用 SSH 登入账户**
    - 使用 [Termius](https://termius.com/) 或其他 SSH 客户端。
-![image](https://github.com/user-attachments/assets/6eb1fed0-ba38-417d-baf9-eb45defb9483)
+      ![image](https://github.com/user-attachments/assets/6eb1fed0-ba38-417d-baf9-eb45defb9483)
    - 进入 Node.js 工作目录：
      ```bash
      cd ~/domains/网站/public_nodejs
@@ -43,15 +43,15 @@
      ```bash
      bash <(curl -s https://raw.githubusercontent.com/jinnan11/serv00-alist/main/install_alist.sh)
      ```
-![image](https://github.com/user-attachments/assets/8055b6f4-62eb-40d1-9ad1-e4458840a7e6)
+      ![image](https://github.com/user-attachments/assets/8055b6f4-62eb-40d1-9ad1-e4458840a7e6)
 
 3. **修改端口号**
    - 在 File manager 中，编辑 `app.js` 和 `data/config.json`，确保端口号一致。
    - 配置 Aria2 端口号（可选）。
    - 配置数据库信息（可选）。
-![image](https://github.com/user-attachments/assets/add13e32-3612-4fec-8f32-2c00a4671c16)
-![image](https://github.com/user-attachments/assets/3ce529cb-5880-494d-895d-b875e7256f03)
-![image](https://github.com/user-attachments/assets/e736d97d-05e6-4c49-9fd7-afb8a201efe7)
+      ![image](https://github.com/user-attachments/assets/add13e32-3612-4fec-8f32-2c00a4671c16)
+      ![image](https://github.com/user-attachments/assets/3ce529cb-5880-494d-895d-b875e7256f03)
+      ![image](https://github.com/user-attachments/assets/e736d97d-05e6-4c49-9fd7-afb8a201efe7)
 
 4. **启动 AList**
    - 启动 AList 并查看运行是否正常：
@@ -62,15 +62,15 @@
      ```bash
      ./web.js admin random
      ```
-![image](https://github.com/user-attachments/assets/be741399-fcf8-4e2b-9d44-397c1927b125)
+      ![image](https://github.com/user-attachments/assets/be741399-fcf8-4e2b-9d44-397c1927b125)
 
 5. **安装 npm22**
    - 执行以下命令：
      ```bash
      npm22 install
      ```
-![image](https://github.com/user-attachments/assets/3fecaf82-ed63-4a74-8b6c-22406cd634d3)
-![image](https://github.com/user-attachments/assets/c6e5bafd-2753-4bda-95c6-28ca1083ab8e)
+      ![image](https://github.com/user-attachments/assets/3fecaf82-ed63-4a74-8b6c-22406cd634d3)
+      ![image](https://github.com/user-attachments/assets/c6e5bafd-2753-4bda-95c6-28ca1083ab8e)
 
 ### 自动启动
 
