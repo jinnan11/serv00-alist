@@ -52,15 +52,22 @@
       ![image](https://github.com/user-attachments/assets/026aaa3d-d8db-4ebf-a422-45d3c74d02f7)
      
    - app.js
-   - 第13行网站端口号，确保和 data/config.json 中的网站端口号一致。
-   - （可选）配置 Aria2 端口号，第 50 行的端口号。
+
+      第13行网站端口号，确保和 data/config.json 中的网站端口号一致。
+     
+      （可选）配置 Aria2 端口号，第 50 行的端口号。
+     
       ![image](https://github.com/user-attachments/assets/3ce529cb-5880-494d-895d-b875e7256f03)
      
    - data/config.json
-   - （可选）[CDN](https://alist.nn.ci/zh/config/configuration.html#cdn)中选择你本地网络连接速度最快的一个。
-   - （可选）配置数据库信息。
-   - 第 26 行网站端口号，确保和 app.js 中的网站端口号一致。
-   - 第 83 行的端口号 5246 改为 0
+
+      （可选）CDN可以在[Alist的官方文档](https://alist.nn.ci/zh/config/configuration.html#cdn)找到，请选择你本地网络连接速度最快的一个。
+     
+      （可选）配置数据库信息。
+     
+      第 26 行网站端口号，确保和 app.js 中的网站端口号一致。
+     
+      第 83 行的端口号 5246 改为 0
       ![image](https://github.com/user-attachments/assets/e736d97d-05e6-4c49-9fd7-afb8a201efe7)
 
 5. **启动 AList**
