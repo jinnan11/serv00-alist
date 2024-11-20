@@ -1,8 +1,8 @@
 ## Serv00 部署 AList
 
-在serv00上实现一键部署Alist，访问即唤醒、保持活跃，并自动更新到最新版
+在serv00上一键部署alist，并且实现访问即拉起和保持更新最新版
 
-[搭建视频演示](https://blog.jnpan.top/001%20Serv00搭建AList)
+搭建视频演示：https://blog.jnpan.top/001%20Serv00搭建AList
 
 ### 部署 Alist 前的准备工作
 
