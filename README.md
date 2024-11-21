@@ -80,8 +80,8 @@
 
       第13行网站端口号
      
-      （可选）配置 Aria2 端口号，第 50 行的端口号。
-     
+      （可选）第 50 行 Aria2 端口号
+
       ![image](https://github.com/user-attachments/assets/8715b4ac-5d8f-40ea-be3d-a7f39b5cabde)
 
    - data/config.json
@@ -105,6 +105,8 @@
      ```
 
       ![image](https://github.com/user-attachments/assets/be741399-fcf8-4e2b-9d44-397c1927b125)
+
+   - 使用Ctrl+c停止运行
 
    - （可选）生成随机管理员密码：
 
