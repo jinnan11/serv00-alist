@@ -106,7 +106,7 @@
 
       ![image](https://github.com/user-attachments/assets/be741399-fcf8-4e2b-9d44-397c1927b125)
 
-   - 使用Ctrl+c停止运行
+      使用Ctrl+c停止运行
 
    - （可选）生成随机管理员密码：
 
