@@ -106,7 +106,7 @@
 
       ![image](https://github.com/user-attachments/assets/be741399-fcf8-4e2b-9d44-397c1927b125)
 
-      使用Ctrl+c停止运行
+      运行正常，记得把管理员用户的密码记住。接着使用 Ctrl+c 停止运行。
 
    - （可选）生成随机管理员密码：
 
