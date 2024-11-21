@@ -38,13 +38,13 @@
 
    - （可选）自定义域名
 
-      ![image](https://github.com/user-attachments/assets/060e7fef-e303-45bd-bf15-3bab20796ffa)
+      ![image](https://github.com/user-attachments/assets/57e2e9b0-6630-4cd1-b090-b44d14d373a6)
 
    - （可选）生成 Let's Encrypt 证书。
    
-      ![image](https://github.com/user-attachments/assets/64db4859-67af-4501-9a62-ac1ee7fa0e15)
+      ![image](https://github.com/user-attachments/assets/ccfb5570-219d-4a70-afe2-6889dd41efa9)
 
-      ![image](https://github.com/user-attachments/assets/2bebed09-8dd2-4c5d-939c-ad6eded6dead)
+      ![image](https://github.com/user-attachments/assets/5dcdf608-7c51-43aa-9603-7e02a79f2737)
 
 ### 部署 Alist
 
@@ -74,16 +74,16 @@
 
    - 在 File manager 中，编辑 app.js 和 data/config.json
 
-      ![image](https://github.com/user-attachments/assets/026aaa3d-d8db-4ebf-a422-45d3c74d02f7)
-     
+      ![image](https://github.com/user-attachments/assets/6dfb2882-f956-4cf9-80d4-8a249e8c9ff5)
+
    - app.js
 
       第13行网站端口号
      
       （可选）配置 Aria2 端口号，第 50 行的端口号。
      
-      ![image](https://github.com/user-attachments/assets/3ce529cb-5880-494d-895d-b875e7256f03)
-     
+      ![image](https://github.com/user-attachments/assets/8715b4ac-5d8f-40ea-be3d-a7f39b5cabde)
+
    - data/config.json
 
       （可选）CDN可以在[Alist的官方文档](https://alist.nn.ci/zh/config/configuration.html#cdn)找到，请选择你本地网络连接速度最快的一个。
@@ -124,7 +124,7 @@
      
 7. **访问您的网站**
 
-      ![image](https://github.com/user-attachments/assets/c6e5bafd-2753-4bda-95c6-28ca1083ab8e)
+      ![image](https://github.com/user-attachments/assets/09cb34dc-9803-48ea-8148-d25e30187325)
 
 ### 自动启动
 
