@@ -96,6 +96,8 @@
 
       ![image](https://github.com/user-attachments/assets/e736d97d-05e6-4c49-9fd7-afb8a201efe7)
 
+      ![image](https://github.com/user-attachments/assets/24844389-f0a8-4609-9891-947a15b3c4fa)
+
 5. **启动 AList**
 
    - 启动 AList 并查看运行是否正常：
