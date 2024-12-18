@@ -26,10 +26,6 @@
 
       ![image](https://github.com/user-attachments/assets/81358b39-ddc7-4936-9268-c5e974bda2cd)
 
-   - （可选）添加数据库，记下数据库名称、用户名和密码。
-
-      ![image](https://github.com/user-attachments/assets/942a5588-3bef-4d53-b85e-cfd7fcf569e6)
-
 3. **新建 Node.js 网站**
 
    - 在 WWW Websites 选项卡，添加 Node.js 类型的网站。
@@ -86,10 +82,6 @@
 
    - data/config.json
 
-      （可选）CDN可以在[Alist的官方文档](https://alist.nn.ci/zh/config/configuration.html#cdn)找到，请选择你本地网络连接速度最快的一个。
-     
-      （可选）配置数据库信息。
-     
       第 26 行网站端口号，确保和 app.js 中的网站端口号一致。
      
       第 83 行的端口号 5246 改为 0
