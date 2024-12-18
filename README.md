@@ -98,7 +98,7 @@
      ./web.js server
      ```
 
-      ![image](https://github.com/user-attachments/assets/be741399-fcf8-4e2b-9d44-397c1927b125)
+      ![image](https://github.com/user-attachments/assets/8af3e6f1-905b-4ffd-863e-26759b453ceb)
 
       运行正常，接着使用 Ctrl+c 停止运行。
 
@@ -108,6 +108,10 @@
      ./web.js admin random
      ```
 
+      ![image](https://github.com/user-attachments/assets/37d8da0f-ddd9-4783-9704-dc63418b6428)
+
+      记得把管理员用户的密码记住
+     
 6. **安装 npm22**
 
    - 执行以下命令：
@@ -116,7 +120,8 @@
      npm22 install
      ```
 
-      ![image](https://github.com/user-attachments/assets/3fecaf82-ed63-4a74-8b6c-22406cd634d3)
+      ![image](https://github.com/user-attachments/assets/f7da1ead-3752-456d-a98d-811f5b1500ad)
+
      
 7. **访问您的网站**
 
