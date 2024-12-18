@@ -86,9 +86,9 @@
      
       第 83 行的端口号 5246 改为 0
 
-      ![image](https://github.com/user-attachments/assets/e736d97d-05e6-4c49-9fd7-afb8a201efe7)
+      ![b57772b59bbf1a98c14873477db2aa37](https://github.com/user-attachments/assets/b3bdb333-8812-467f-aa2e-51303f54a3f6)
 
-      ![image](https://github.com/user-attachments/assets/24844389-f0a8-4609-9891-947a15b3c4fa)
+      ![13f9917c63140e739995fb279f3a99b3](https://github.com/user-attachments/assets/f029980e-8956-4ab7-9d90-582b67d1806e)
 
 5. **启动 AList**
 
@@ -100,9 +100,9 @@
 
       ![image](https://github.com/user-attachments/assets/be741399-fcf8-4e2b-9d44-397c1927b125)
 
-      运行正常，记得把管理员用户的密码记住。接着使用 Ctrl+c 停止运行。
+      运行正常，接着使用 Ctrl+c 停止运行。
 
-   - （可选）生成随机管理员密码：
+   - 生成随机管理员密码：
 
      ```bash
      ./web.js admin random
