@@ -86,9 +86,9 @@
      
       第 83 行的端口号 5246 改为 0
 
-      ![b57772b59bbf1a98c14873477db2aa37](https://github.com/user-attachments/assets/b3bdb333-8812-467f-aa2e-51303f54a3f6)
+      ![image](https://github.com/user-attachments/assets/b3bdb333-8812-467f-aa2e-51303f54a3f6)
 
-      ![13f9917c63140e739995fb279f3a99b3](https://github.com/user-attachments/assets/f029980e-8956-4ab7-9d90-582b67d1806e)
+      ![image](https://github.com/user-attachments/assets/f029980e-8956-4ab7-9d90-582b67d1806e)
 
 5. **启动 AList**
 
@@ -160,11 +160,23 @@
 
 3. **国内访问问题**
 
-   - Serv00 部分服务器屏蔽国内 IP，建议使用代理工具或套一层 CF。
+   - Serv00 服务器不定期屏蔽国内 IP，导致无法访问。
+
+     建议使用代理工具或套一层 Cloudflare。
 
 4. **挂载国内网盘问题**
 
-   - Serv00 部分服务器屏蔽国内 IP，查看支持情况请访问测试站：https://test.jnpan.top
+   - Serv00 服务器不定期屏蔽国内 IP，导致无法挂载国内网盘。
+
+     无解，可访问[测试站](https://test.jnpan.top)查看支持情况
+  
+5. **使用 Cloudflare 问题**
+
+   - 使用 Cloudflare 并打开小黄云，显示 Invalid SSL certificate Error code 526
+
+     原因网站无证书，给网站申请证书 或 将域名 SSL/TLS 加密模式改为灵活
+
+      ![image](https://github.com/user-attachments/assets/ee9c2772-3c6a-49a4-850e-b5c10ad9a057)
 
 ### 常用指令
 
