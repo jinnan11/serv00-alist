@@ -176,7 +176,7 @@
 
      原因网站无证书，给网站申请证书 或 将域名 SSL/TLS 加密模式改为灵活
 
-      ![image](https://github.com/user-attachments/assets/ee9c2772-3c6a-49a4-850e-b5c10ad9a057)
+      ![image](https://github.com/user-attachments/assets/c58087c1-af8d-47d5-b8b0-212b5b71ad03)
 
 ### 常用指令
 
