@@ -11,7 +11,7 @@ get_current_version() {
 }
 get_latest_version() {
     # Get latest release version number
-    RELEASE_LATEST="$(curl -IkLs -o ${TMP_DIRECTORY}/NUL -w %{url_effective} https://github.com/jinnan11/alist-freebsd/releases/latest | grep -o "[^/]*$")"
+    RELEASE_LATEST="$(curl -IkLs -o ${TMP_DIRECTORY}/NUL -w %{url_effective} https://github.com/AlistGo/alist/releases/latest | grep -o "[^/]*$")"
     RELEASE_LATEST="v${RELEASE_LATEST#v}"
     if [[ -z "$RELEASE_LATEST" ]]; then
         echo "error: Failed to get the latest release version, please check your network."
