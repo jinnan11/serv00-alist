@@ -1,9 +1,7 @@
-/*
-作者: 槿南
-主页：https://i.jnpan.top
-GitHub：https://github.com/jinnan11/serv00-alist
-版权所有，请勿删除
-*/
+# 作者: 槿南
+# 主页：https://i.jnpan.top
+# GitHub：https://github.com/jinnan11/serv00-alist
+# 版权所有，请勿删除
 
 # 清屏
 clear
