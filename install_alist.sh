@@ -13,6 +13,9 @@ if [ "$(basename "$(pwd)")" == "public_nodejs" ]; then
 
     # 删除 start.sh 文件，如果不存在则跳过
     [ -f start.sh ] && rm start.sh
+
+    # 删除 alist 文件，如果不存在则跳过
+    [ -f alist ] && rm alist
     
     # 判断是否有所需文件
     files=("app.js" "start.sh" "package.json" "web.js")
