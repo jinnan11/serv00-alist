@@ -1,7 +1,9 @@
-# 作者：槿南
-# 作者主页：https://i.jnpan.top
-# GitHub 开源项目：https://github.com/jinnan11/serv00-alist
-# 请勿删除或修改本脚本的作者信息。尊重开源协议，保留原作者信息是对开源社区的支持和尊重。
+/*
+作者: 槿南
+主页：https://i.jnpan.top
+GitHub：https://github.com/jinnan11/serv00-alist
+版权所有，请勿删除
+*/
 
 # 清屏
 clear
