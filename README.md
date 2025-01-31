@@ -168,7 +168,7 @@
 
    - Serv00 服务器不定期屏蔽国内 IP，导致无法挂载国内网盘。
 
-     无解，可访问[测试站](https://test.jnpan.top)查看支持情况
+     无解，可访问[测试站](https://test.jinnan.top)查看支持情况
   
 5. **使用 Cloudflare 问题**
 
