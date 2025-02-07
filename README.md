@@ -111,7 +111,7 @@
       ![image](https://github.com/user-attachments/assets/37d8da0f-ddd9-4783-9704-dc63418b6428)
 
       记得把管理员用户的密码记住
-     
+
 6. **安装 npm22**
 
    - 执行以下命令：
@@ -122,7 +122,6 @@
 
       ![image](https://github.com/user-attachments/assets/f7da1ead-3752-456d-a98d-811f5b1500ad)
 
-     
 7. **访问您的网站**
 
       ![image](https://github.com/user-attachments/assets/09cb34dc-9803-48ea-8148-d25e30187325)
