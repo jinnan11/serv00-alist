@@ -37,7 +37,7 @@
       ![image](https://github.com/user-attachments/assets/57e2e9b0-6630-4cd1-b090-b44d14d373a6)
 
    - （可选）生成 Let's Encrypt 证书。
-   
+
       ![image](https://github.com/user-attachments/assets/ccfb5570-219d-4a70-afe2-6889dd41efa9)
 
       ![image](https://github.com/user-attachments/assets/5dcdf608-7c51-43aa-9603-7e02a79f2737)
@@ -49,7 +49,7 @@
    - 使用 [Termius](https://termius.com/) 或其他 SSH 客户端。
 
       ![image](https://github.com/user-attachments/assets/6eb1fed0-ba38-417d-baf9-eb45defb9483)
-     
+
 2. **进入 Node.js 工作目录：**
 
      ```bash
@@ -75,7 +75,7 @@
    - app.js
 
       第13行网站端口号
-     
+
       （可选）第 50 行 Aria2 端口号
 
       ![image](https://github.com/user-attachments/assets/8715b4ac-5d8f-40ea-be3d-a7f39b5cabde)
@@ -83,7 +83,7 @@
    - data/config.json
 
       第 26 行网站端口号，确保和 app.js 中的网站端口号一致。
-     
+
       第 83 行的端口号 5246 改为 0
 
       ![image](https://github.com/user-attachments/assets/b3bdb333-8812-467f-aa2e-51303f54a3f6)
@@ -156,6 +156,7 @@
 
       ![image](https://github.com/user-attachments/assets/f18cdd5f-ecec-4c0d-bd0d-1fb49c5f40e1)
 
+
 3. **国内访问问题**
 
    - Serv00 服务器不定期屏蔽国内 IP，导致无法访问。
@@ -167,7 +168,7 @@
    - Serv00 服务器不定期屏蔽国内 IP，导致无法挂载国内网盘。
 
      无解
-  
+
 5. **使用 Cloudflare 问题**
 
    - 使用 Cloudflare 并打开小黄云，显示 Invalid SSL certificate Error code 526
@@ -183,7 +184,7 @@
   ```bash
   ./web.js admin random
   ```
-  
+
 - 关闭用户所有进程：
 
   ```bash
