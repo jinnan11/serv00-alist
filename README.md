@@ -38,7 +38,7 @@
 
    - （可选）生成 Let's Encrypt 证书。
    
-      ![image](https://github.com/user-attachments/assets/ccfb5570-219d-4a70-afe2-6889dd41efa9)
+      ![image](https://github.com/user-attachmen/asse/ccfb5570-219d-4a70-afe2-6889dd41efa9)
 
       ![image](https://github.com/user-attachments/assets/5dcdf608-7c51-43aa-9603-7e02a79f2737)
 
@@ -168,7 +168,7 @@
 
    - Serv00 服务器不定期屏蔽国内 IP，导致无法挂载国内网盘。
 
-     无解，可访问[测试站](https://test.jinnan.top)查看支持情况
+     无解
   
 5. **使用 Cloudflare 问题**
 
