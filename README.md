@@ -38,7 +38,7 @@
 
    - （可选）生成 Let's Encrypt 证书。
    
-      ![image](https://github.com/user-attachments/asse/ccfb5570-219d-4a70-afe2-6889dd41efa9)
+      ![image](https://github.com/user-attachments/assets/ccfb5570-219d-4a70-afe2-6889dd41efa9)
 
       ![image](https://github.com/user-attachments/assets/5dcdf608-7c51-43aa-9603-7e02a79f2737)
 
