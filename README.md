@@ -2,8 +2,6 @@
 
 在serv00上一键部署alist，并且实现访问即拉起和保持更新最新版
 
-搭建视频演示：[查看链接](https://blog.jinnan.top/001%20Serv00搭建AList/搭建视频演示.mkv)
-
 ### 部署 Alist 前的准备工作
 
 1. **注册账号**
