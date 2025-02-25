@@ -194,3 +194,13 @@
 - [使用 Serv00 免费虚拟主机部署 Alist](https://zhuanlan.zhihu.com/p/680607217)
 
 - [Serv00 进程保活最终解决方案](https://saika.us.kg/2024/08/15/serv00-keep-alive)
+
+### 类似项目
+
+- [serv00-play](https://github.com/frankiejun/serv00-play)
+
+  与本项目对比
+
+  优点：部署AList方便
+
+  缺点：部署的AList的版本未知，没 Aria2 可选
