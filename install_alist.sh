@@ -1,5 +1,5 @@
-# 作者: 槿南
-# 主页：https://i.jnpan.top
+# 作者: 槿南11
+# 主页：https://jinnan.top
 # GitHub：https://github.com/jinnan11/serv00-alist
 # 版权所有，请勿删除
 
@@ -8,13 +8,9 @@ clear
 
 # 判断是否在 public_nodejs 目录下
 if [ "$(basename "$(pwd)")" == "public_nodejs" ]; then
-    # 删除 public/index.html 文件，如果不存在则跳过
+    # 删除残留文件，如果不存在则跳过
     [ -f public/index.html ] && rm public/index.html
-
-    # 删除 start.sh 文件，如果不存在则跳过
     [ -f start.sh ] && rm start.sh
-
-    # 删除 alist 文件，如果不存在则跳过
     [ -f alist ] && rm alist
     
     # 判断是否有所需文件
@@ -51,16 +47,14 @@ if [ "$(basename "$(pwd)")" == "public_nodejs" ]; then
         # 如果存在，显示安装完成信息
         echo -e "已成功安装 Alist！\n"
         echo -e "请在 File manager 中，编辑 app.js 和 data/config.json\n"
-        echo -e "作者： https://jnpan.top\nQQ群： 244184124 欢迎加入交流\n"
+        echo -e "作者：https://jinnan.top\nQQ群：244184124 欢迎加入交流~\n"
         
     else
         # 使您能够运行自己的软件
         devil binexec on
 
-        # 删除 web.js 文件，如果不存在则跳过
+        # 删除残留文件，如果不存在则跳过
         [ -f web.js ] && rm web.js
-
-        # 删除 start.sh 文件，如果不存在则跳过
         [ -f start.sh ] && rm start.sh
 
         # 清屏
