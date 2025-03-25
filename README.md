@@ -57,17 +57,9 @@
 3. **下载并运行 AList**
 
    - 执行以下命令：
-
-     官方源
-
+   
      ```bash
      bash <(curl -s https://raw.githubusercontent.com/jinnan11/serv00-alist/main/install_alist.sh)
-     ```
-
-     Yxiguan源(实现123网盘无限制下载)
-
-     ```bash
-     bash <(curl -s https://raw.githubusercontent.com/jinnan11/serv00-alist/main/install_Alist_123.sh)
      ```
 
       ![image](https://github.com/user-attachments/assets/8055b6f4-62eb-40d1-9ad1-e4458840a7e6)
